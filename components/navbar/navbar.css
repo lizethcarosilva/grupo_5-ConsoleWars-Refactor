@@ -1,0 +1,76 @@
+.site-navbar {
+  background-color: #111827 !important;
+  border-bottom: 2px solid #2db5ff;
+  z-index: 1030;
+}
+
+.site-navbar .navbar-brand {
+  color: #fff;
+  letter-spacing: 0.5px;
+  min-width: 0;
+}
+
+.site-navbar .navbar-brand img {
+  flex-shrink: 0;
+}
+
+.site-navbar .brand-accent {
+  color: #0adb11;
+}
+
+.site-navbar .nav-link {
+  color: #d1d5db !important;
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link.active {
+  color: #0adb11 !important;
+}
+
+.site-navbar .btn-success {
+  background-color: #0fde04;
+  border: none;
+  color: #0b0f19;
+  font-weight: 600;
+}
+
+.site-navbar .btn-success:hover {
+  background-color: #0bbf03;
+}
+
+.site-navbar .navbar-collapse form {
+  width: 100%;
+  max-width: 280px;
+}
+
+@media (max-width: 991.98px) {
+  .site-navbar .navbar-collapse {
+    padding-top: 0.75rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .site-navbar .navbar-nav {
+    margin-bottom: 0.75rem !important;
+  }
+
+  .site-navbar .navbar-collapse form {
+    max-width: none;
+  }
+
+  .site-navbar .nav-link {
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .site-navbar .navbar-brand {
+    font-size: 0.95rem;
+  }
+
+  .site-navbar .navbar-brand img {
+    width: 40px;
+    height: 40px;
+  }
+}
+

@@ -1,105 +1,158 @@
 <section class="inicio-page">
-  <div class="inicio-hero">
-    <div>
-      <h1>Xbox vs PlayStation</h1>
-      <h2>Blog comparativo de consolas de videojuegos</h2>
-      <p>
-        En este sitio comparamos Xbox y PlayStation para conocer sus
-        características, beneficios, desventajas, versiones y diferencias
-        principales. Información clara para decidir qué consola se adapta
-        mejor a tu estilo de juego.
+  <section class="inicio-banner">
+    <div class="inicio-banner__media">
+      <img
+        src="assets/images/xboxvsps.jpg"
+        alt="Xbox y PlayStation"
+        class="inicio-banner__img"
+      />
+      <div class="inicio-banner__overlay"></div>
+    </div>
+    <div class="container inicio-banner__content">
+      <p class="inicio-banner__eyebrow">Grupo 5 · Generation Colombia</p>
+      <h1 class="inicio-banner__title">Xbox vs PlayStation</h1>
+      <p class="inicio-banner__text">
+        Comparativas claras para elegir consola: rendimiento, exclusivos,
+        servicios y versiones.
       </p>
+      <div class="d-flex flex-wrap gap-2">
+        <a href="pages/quienes-somos/quienes-somos.html" class="btn btn-success btn-lg">
+          Conoce al equipo
+        </a>
+        <a href="pages/contacto/contacto.html" class="btn btn-outline-light btn-lg">
+          Contáctanos
+        </a>
+      </div>
     </div>
-    <img
-      src="/public/images/xboxvsps.jpg"
-      alt="Controles de consolas de videojuegos sobre una superficie"
-    />
+  </section>
+
+  <div class="container py-5">
+    <section class="mb-5">
+      <h2 class="h3 fw-bold mb-4">Conoce las consolas</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-6">
+          <div class="inicio-box inicio-box--xbox h-100 p-3">
+            <img
+              src="assets/images/xbox.jpg"
+              alt="Consola Xbox y control inalámbrico"
+              class="img-fluid w-100 mb-3 inicio-box__img"
+            />
+            <h3 class="h4">Xbox</h3>
+            <p class="mb-0 text-secondary">
+              Marca de Microsoft con consolas, juegos, servicios digitales y
+              opciones de suscripción como Game Pass.
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="inicio-box inicio-box--ps h-100 p-3">
+            <img
+              src="assets/images/ps.jpg"
+              alt="Consola PlayStation y control DualSense"
+              class="img-fluid w-100 mb-3 inicio-box__img"
+            />
+            <h3 class="h4">PlayStation</h3>
+            <p class="mb-0 text-secondary">
+              Marca de Sony reconocida por sus exclusivos, experiencia gráfica y
+              el control DualSense.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="h3 fw-bold mb-4">Beneficios y desventajas</h2>
+      <div class="row g-4">
+        <div class="col-12 col-lg-6">
+          <div class="inicio-box h-100 p-3">
+            <h3 class="h5 text-success mb-3">Xbox</h3>
+            <div class="row g-3">
+              <div class="col-12 col-sm-6">
+                <div class="inicio-subbox p-3 h-100">
+                  <h4 class="h6 text-info">Beneficios</h4>
+                  <ul class="mb-0">
+                    <li>Acceso a juegos con Game Pass.</li>
+                    <li>Compatibilidad con generaciones anteriores.</li>
+                    <li>Integración con PCs Windows.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="inicio-subbox p-3 h-100">
+                  <h4 class="h6 text-info">Desventajas</h4>
+                  <ul class="mb-0">
+                    <li>Servicios con suscripción.</li>
+                    <li>Almacenamiento limitado en juegos pesados.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="inicio-box h-100 p-3">
+            <h3 class="h5 text-primary mb-3">PlayStation</h3>
+            <div class="row g-3">
+              <div class="col-12 col-sm-6">
+                <div class="inicio-subbox p-3 h-100">
+                  <h4 class="h6 text-info">Beneficios</h4>
+                  <ul class="mb-0">
+                    <li>Exclusivos reconocidos.</li>
+                    <li>Buena experiencia gráfica.</li>
+                    <li>Funciones del DualSense.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="inicio-subbox p-3 h-100">
+                  <h4 class="h6 text-info">Desventajas</h4>
+                  <ul class="mb-0">
+                    <li>Algunos juegos con precios altos.</li>
+                    <li>Servicios también con suscripción.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="h3 fw-bold mb-4">Versiones principales</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-6">
+          <div class="inicio-box inicio-box--xbox p-3 h-100">
+            <h3 class="h5 mb-3">Xbox</h3>
+            <div class="row g-2">
+              <div class="col-12">
+                <div class="inicio-subbox p-3">Xbox Series X</div>
+              </div>
+              <div class="col-12">
+                <div class="inicio-subbox p-3">Xbox Series S</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="inicio-box inicio-box--ps p-3 h-100">
+            <h3 class="h5 mb-3">PlayStation</h3>
+            <div class="row g-2">
+              <div class="col-12">
+                <div class="inicio-subbox p-3">PlayStation 5 estándar</div>
+              </div>
+              <div class="col-12">
+                <div class="inicio-subbox p-3">PlayStation 5 edición digital</div>
+              </div>
+              <div class="col-12">
+                <div class="inicio-subbox p-3">PlayStation 5 Slim</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
-
-  <section>
-    <h2>Conoce las consolas</h2>
-    <div class="consolas-grid">
-      <article class="consola-card consola-card--xbox">
-        <img
-          src="/public/images/xbox.jpg"
-          alt="Consola Xbox y control inalámbrico"
-        />
-        <h3>Xbox</h3>
-        <p>
-          Xbox es una marca de videojuegos desarrollada por Microsoft. Cuenta
-          con diferentes consolas, videojuegos, servicios digitales y opciones
-          de suscripción.
-        </p>
-      </article>
-
-      <article class="consola-card consola-card--ps">
-        <img
-          src="/public/images/ps.jpg"
-          alt="Consola PlayStation y control DualSense"
-        />
-        <h3>PlayStation</h3>
-        <p>
-          PlayStation es una marca de videojuegos desarrollada por Sony. Es
-          reconocida por sus consolas, juegos exclusivos y diferentes
-          experiencias de entretenimiento.
-        </p>
-      </article>
-    </div>
-  </section>
-
-  <section>
-    <h2>Beneficios y desventajas</h2>
-    <div class="comparativa-grid">
-      <article>
-        <h3>Xbox</h3>
-        <h4>Beneficios</h4>
-        <ul>
-          <li>Tiene acceso a diferentes juegos por medio de Game Pass.</li>
-          <li>Permite jugar algunos títulos de generaciones anteriores.</li>
-          <li>Se puede integrar con computadores que utilizan Windows.</li>
-        </ul>
-        <h4>Desventajas</h4>
-        <ul>
-          <li>Algunos servicios necesitan una suscripción.</li>
-          <li>El almacenamiento puede ser limitado para juegos pesados.</li>
-        </ul>
-      </article>
-
-      <article>
-        <h3>PlayStation</h3>
-        <h4>Beneficios</h4>
-        <ul>
-          <li>Cuenta con juegos exclusivos reconocidos.</li>
-          <li>Ofrece una buena experiencia gráfica.</li>
-          <li>El control DualSense tiene funciones diferentes.</li>
-        </ul>
-        <h4>Desventajas</h4>
-        <ul>
-          <li>Algunos juegos pueden tener precios altos.</li>
-          <li>Algunos servicios también necesitan una suscripción.</li>
-        </ul>
-      </article>
-    </div>
-  </section>
-
-  <section>
-    <h2>Versiones principales</h2>
-    <div class="comparativa-grid">
-      <article>
-        <h3>Xbox</h3>
-        <ul>
-          <li>Xbox Series X</li>
-          <li>Xbox Series S</li>
-        </ul>
-      </article>
-      <article>
-        <h3>PlayStation</h3>
-        <ul>
-          <li>PlayStation 5 estándar</li>
-          <li>PlayStation 5 edición digital</li>
-          <li>PlayStation 5 Slim</li>
-        </ul>
-      </article>
-    </div>
-  </section>
 </section>

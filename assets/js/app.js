@@ -4,29 +4,33 @@ async function loadComponents() {
       "afterbegin",
       `<div class="alert alert-warning text-center m-0 rounded-0" role="alert">
         No abras el archivo directo. Usa <strong>Live Server</strong>
-        o ejecuta: <code>python -m http.server 5500</code>
+        o ejecuta en la carpeta del proyecto:<br>
+        <code>python -m http.server 5500</code>
       </div>`
     );
     return;
   }
 
-  const placeholders = document.querySelectorAll("[data-include]");
+  const placeholders = [...document.querySelectorAll("[data-include]")];
 
-  await Promise.all(
-    [...placeholders].map(async (el) => {
-      const file = el.getAttribute("data-include");
-      try {
-        const response = await fetch(file);
-        if (!response.ok) {
-          throw new Error(`No se pudo cargar ${file}`);
-        }
-        el.outerHTML = await response.text();
-      } catch (error) {
-        console.error(error);
-        el.innerHTML = `<p class="text-danger text-center p-3">Error al cargar: ${file}</p>`;
+  for (const el of placeholders) {
+    const file = (el.getAttribute("data-include") || "")
+      .replace(/\\/g, "/")
+      .replace(/^(\.\.\/)+/, "")
+      .replace(/^\.\//, "")
+      .replace(/^\//, "");
+
+    try {
+      const response = await fetch(file);
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status} al cargar ${file}`);
       }
-    })
-  );
+      el.outerHTML = await response.text();
+    } catch (error) {
+      console.error(error);
+      el.outerHTML = `<p class="text-danger text-center p-3">Error al cargar: ${file}</p>`;
+    }
+  }
 
   markActiveNavLink();
 }
@@ -35,8 +39,14 @@ function markActiveNavLink() {
   const page = document.body.getAttribute("data-page");
   if (!page) return;
 
-  document.querySelectorAll(".barraNavegacion a[data-page]").forEach((link) => {
-    link.classList.toggle("active", link.getAttribute("data-page") === page);
+  document.querySelectorAll(".navbar .nav-link[data-page]").forEach((link) => {
+    const isActive = link.getAttribute("data-page") === page;
+    link.classList.toggle("active", isActive);
+    if (isActive) {
+      link.setAttribute("aria-current", "page");
+    } else {
+      link.removeAttribute("aria-current");
+    }
   });
 }
 

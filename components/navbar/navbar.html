@@ -1,39 +1,61 @@
-<nav class="navbar navbar-expand-lg navbar-dark shadow"
-  style="background-color:#111827; border-bottom:2px solid #2DB5FF;">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm site-navbar">
   <div class="container">
-    <img src="assets/images/logo.png" alt="Logo Console Wars" width="55" class="me-3">
-    <a class="navbar-brand fw-bold fs-3" href="#">
-      CONSOLE-<span style="color:#02b905;">WARS</span>
+    <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+      <img
+        src="assets/images/logo.png"
+        alt="Logo Console Wars"
+        width="48"
+        height="48"
+        class="rounded-circle"
+      />
+      <span>CONSOLE<span class="brand-accent">WARS</span></span>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#menuPrincipal"
+      aria-controls="menuPrincipal"
+      aria-expanded="false"
+      aria-label="Abrir menú"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto">
+
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2">
         <li class="nav-item">
-          <a class="nav-link active fw-semibold" style="color:#0adb11;" href="#">
-            Inicio
-          </a>
-          <link rel="stylesheet" href="index.html">
+          <a class="nav-link fw-semibold" href="index.html" data-page="inicio">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">
+          <a
+            class="nav-link fw-semibold"
+            href="pages/quienes-somos/quienes-somos.html"
+            data-page="quienes-somos"
+          >
             Quiénes somos
           </a>
-          <link rel="stylesheet" href="pages/quienes-somos/quienes-somos.html">
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+        <li class="nav-item">
+          <a
+            class="nav-link fw-semibold"
+            href="pages/contacto/contacto.html"
+            data-page="contacto"
+          >
             Contacto
           </a>
-          <link rel="stylesheet" href="pages/contacto/contacto.html">
         </li>
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Buscar">
-        <button class="btn text-white" style="background:#0fde04; border:none;">
-          Buscar
-        </button>
+
+      <form class="d-flex w-100 w-lg-auto" role="search" onsubmit="return false;">
+        <input
+          class="form-control form-control-sm me-2 flex-grow-1"
+          type="search"
+          placeholder="Buscar..."
+          aria-label="Buscar"
+        />
+        <button class="btn btn-sm btn-success flex-shrink-0" type="button">Buscar</button>
       </form>
     </div>
   </div>
