@@ -1,0 +1,60 @@
+.contacto-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 3rem;
+}
+
+.contacto-page h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.contacto-page h2 {
+  font-size: 1.4rem;
+  color: #38bdf8;
+  margin: 1.75rem 0 1rem;
+}
+
+.contacto-page section {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contacto-page form {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 560px;
+}
+
+.contacto-page label {
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.contacto-page input,
+.contacto-page textarea {
+  width: 100%;
+  padding: 0.7rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid #1f2937;
+  background: #0b0f19;
+  color: #f8fafc;
+}
+
+.contacto-page button[type="submit"] {
+  width: fit-content;
+  padding: 0.7rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  background: #107c10;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contacto-page button[type="submit"]:hover {
+  background: #0b5c0b;
+}
