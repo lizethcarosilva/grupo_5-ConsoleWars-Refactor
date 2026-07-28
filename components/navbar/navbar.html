@@ -1,28 +1,39 @@
-
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-        <img src="public/images/logo.png" alt="Logo Grupo 5 - Console Wars" />
-    <a class="navbar-brand" href="#">CONSOLE-WARS</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-dark shadow"
+  style="background-color:#111827; border-bottom:2px solid #2DB5FF;">
+  <div class="container">
+    <img src="assets/images/logo.png" alt="Logo Console Wars" width="55" class="me-3">
+    <a class="navbar-brand fw-bold fs-3" href="#">
+      CONSOLE-<span style="color:#02b905;">WARS</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav mx-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          <a class="nav-link active fw-semibold" style="color:#0adb11;" href="#">
+            Inicio
+          </a>
+          <link rel="stylesheet" href="index.html">
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Quienes somos</a>
+          <a class="nav-link text-white" href="#">
+            Quiénes somos
+          </a>
+          <link rel="stylesheet" href="/grupo_5-ConsoleWars-Refactor/pages/quienes-somos/quienes-somos.html">
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
             Contacto
           </a>
+          <link rel="stylesheet" href="/grupo_5-ConsoleWars-Refactor/pages/contacto/contacto.html">
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Buscar">
+        <button class="btn text-white" style="background:#0fde04; border:none;">
+          Buscar
+        </button>
       </form>
     </div>
   </div>
