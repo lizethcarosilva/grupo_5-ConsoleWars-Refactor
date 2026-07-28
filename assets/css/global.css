@@ -1,69 +1,137 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #0b0f19;
-  color: #f8fafc;
-  line-height: 1.6;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-
-main,
-.page-main {
-  flex: 1;
-  width: 100%;
-  min-width: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-a {
-  color: #38bdf8;
-  word-break: break-word;
-}
-
-.text-secondary {
-  color: #94a3b8 !important;
-}
-
-/* Tipografía fluidas en títulos Bootstrap */
-.display-5 {
-  font-size: clamp(1.75rem, 5vw, 2.5rem);
-}
-
-.display-6 {
-  font-size: clamp(1.5rem, 4vw, 2.25rem);
-}
-
-.lead {
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
-}
-
-/* Contenedores: menos padding en móvil */
-@media (max-width: 575.98px) {
-  .container,
-  .container-fluid {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .btn-lg {
-    font-size: 1rem;
-    padding: 0.65rem 1rem;
-  }
-}
-
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+
+
+html {
+
+  scroll-behavior: smooth;
+
+  -webkit-text-size-adjust: 100%;
+
+}
+
+
+
+body {
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  background-color: #0b0f19;
+
+  color: #f8fafc;
+
+  line-height: 1.6;
+
+  min-height: 100vh;
+
+  overflow-x: hidden;
+
+}
+
+
+
+main,
+
+.page-main {
+
+  flex: 1;
+
+  width: 100%;
+
+  min-width: 0;
+
+}
+
+
+
+img {
+
+  max-width: 100%;
+
+  height: auto;
+
+  display: block;
+
+}
+
+
+
+a {
+
+  color: #38bdf8;
+
+  word-break: break-word;
+
+}
+
+
+
+.text-secondary {
+
+  color: #94a3b8 !important;
+
+}
+
+
+
+
+
+.display-5 {
+
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+
+}
+
+
+
+.display-6 {
+
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+
+}
+
+
+
+.lead {
+
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+
+}
+
+
+
+
+
+@media (max-width: 575.98px) {
+
+  .container,
+
+  .container-fluid {
+
+    padding-left: 1rem;
+
+    padding-right: 1rem;
+
+  }
+
+
+
+  .btn-lg {
+
+    font-size: 1rem;
+
+    padding: 0.65rem 1rem;
+
+  }
+
+}
+
+
