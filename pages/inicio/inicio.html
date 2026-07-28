@@ -1,43 +1,30 @@
 <!--
-  Creo la sección principal de la página de inicio.
-
-  Mantengo la clase inicio-page porque me permite aplicar
-  estilos específicos a todo el contenido de esta página.
--->
+  Creo la sección principal de la página de inicio y mantengo la clase inicio-page porque me permite 
+  aplicar estilos específicos a todo el contenido de esta página-->
 <section class="inicio-page">
 
   <!--
-    Creo el bloque principal o hero.
-
-    En este espacio presento el tema general del sitio
-    antes de mostrar la información comparativa.
-  -->
+    Creo el bloque principal o hero y en este espacio presento el tema general del sitio
+    antes de mostrar la información comparativa -->
   <div class="inicio-hero">
 
     <!--
-      Agrupo el título, subtítulo y descripción para
-      mantener organizado el contenido textual del hero.
-    -->
+      Agrupo el título, subtítulo y descripción para mantener organizado el contenido 
+      textual del hero -->
     <div>
 
       <!--
-        Utilizo un solo h1 porque representa el título
-        principal de esta página.
-      -->
+        Utilizo un solo h1 porque representa el título principal de esta página-->
       <h1>Xbox vs PlayStation</h1>
 
       <!--
-        Utilizo un h2 para complementar el título principal
-        y explicar el tipo de contenido del sitio.
-      -->
+        Utilizo un h2 para complementar el título principal y explicar el tipo de contenido del sitio-->
       <h2>
         Blog comparativo de consolas de videojuegos
       </h2>
 
       <!--
-        Presento brevemente el propósito de la página
-        para que el usuario comprenda qué encontrará.
-      -->
+        Presento brevemente el propósito de la página para que el usuario comprenda qué encontrará-->
       <p>
         En este sitio comparamos Xbox y PlayStation
         para conocer sus características, beneficios,
@@ -48,14 +35,10 @@
     </div>
 
     <!--
-      Muestro una imagen relacionada con Xbox y PlayStation.
+      Muestro una imagen relacionada con Xbox y PlayStation y Corrijo la ruta anterior porque la imagen 
+      ya no está dentro de public/images, sino en assets/images.
 
-      Corrijo la ruta anterior porque la imagen ya no está
-      dentro de public/images, sino en assets/images.
-
-      También mantengo un texto alternativo descriptivo
-      para mejorar la accesibilidad.
-    -->
+      También mantengo un texto alternativo descriptivo para mejorar la accesibilidad -->
     <img
       src="assets/images/xboxvsps.jpg"
       alt="Controles de Xbox y PlayStation sobre una superficie"
@@ -63,59 +46,44 @@
   </div>
 
   <!--
-    Creo una sección semántica para presentar las consolas.
-
-    Relaciono la sección con su título mediante
-    aria-labelledby.
+    Creo una sección semántica para presentar las consolas y relaciono la sección con su título 
+    mediante aria-labelledby.
   -->
   <section aria-labelledby="titulo-consolas">
 
     <!--
-      Creo un identificador único para conectar este título
-      con la sección mediante aria-labelledby.
-    -->
+      Creo un identificador único para conectar este título con la sección mediante aria-labelledby -->
     <h2 id="titulo-consolas">
       Conoce las consolas
     </h2>
 
     <!--
-      Agrupo las tarjetas en una cuadrícula para mantener
-      una distribución ordenada y adaptable.
-    -->
+      Agrupo las tarjetas en una cuadrícula para mantener una distribución ordenada y adaptable-->
     <div class="consolas-grid">
 
       <!--
-        Creo la tarjeta informativa de Xbox.
+        Creo la tarjeta informativa de Xbox y conservo la clase consola-card para aplicar 
+        los estilos generales de las tarjetas.
 
-        Conservo la clase consola-card para aplicar los estilos
-        generales de las tarjetas.
-
-        Agrego consola-card--xbox para que JavaScript pueda
-        identificar y resaltar esta tarjeta cuando el usuario
-        seleccione Xbox como su preferida.
-      -->
+        Agrego consola-card--xbox para que JavaScript pueda identificar y resaltar esta tarjeta cuando 
+        el usuario seleccione Xbox como su preferida-->
       <article
         class="consola-card consola-card--xbox"
       >
 
         <!--
-          Muestro la imagen de Xbox y utilizo la nueva ruta
-          correspondiente a la carpeta assets/images.
-        -->
+          Muestro la imagen de Xbox y utilizo la nueva ruta correspondiente a la carpeta assets/images-->
         <img
           src="assets/images/xbox.jpg"
           alt="Consola Xbox y control inalámbrico"
         />
 
         <!--
-          Utilizo un h3 porque Xbox es un contenido interno
-          de la sección Conoce las consolas.
-        -->
+          Utilizo un h3 porque Xbox es un contenido interno de la sección Conoce las consolas-->
         <h3>Xbox</h3>
 
         <!--
-          Presento una descripción general de Xbox.
-        -->
+          Presento una descripción general de Xbox-->
         <p>
           Xbox es una marca de videojuegos desarrollada
           por Microsoft. Cuenta con diferentes consolas,
@@ -125,33 +93,25 @@
       </article>
 
       <!--
-        Creo la tarjeta informativa de PlayStation.
-
-        Agrego consola-card--ps para poder localizar y
-        resaltar esta tarjeta desde JavaScript.
-      -->
+        Creo la tarjeta informativa de PlayStation y agrego consola-card--ps para poder localizar y
+        resaltar esta tarjeta desde JavaScript-->
       <article
         class="consola-card consola-card--ps"
       >
 
         <!--
-          Muestro la imagen de PlayStation usando la ruta
-          actual dentro de assets/images.
-        -->
+          Muestro la imagen de PlayStation usando la ruta actual dentro de assets/images-->
         <img
           src="assets/images/ps.jpg"
           alt="Consola PlayStation y control DualSense"
         />
 
         <!--
-          Utilizo un h3 porque PlayStation pertenece
-          a la sección Conoce las consolas.
-        -->
+          Utilizo un h3 porque PlayStation pertenece a la sección Conoce las consolas-->
         <h3>PlayStation</h3>
 
         <!--
-          Presento una descripción general de PlayStation.
-        -->
+          Presento una descripción general de PlayStation-->
         <p>
           PlayStation es una marca de videojuegos
           desarrollada por Sony. Es reconocida por sus
@@ -163,46 +123,33 @@
   </section>
 
   <!--
-    Creo una sección para comparar los beneficios
-    y las desventajas de cada consola.
-  -->
+    Creo una sección para comparar los beneficios y las desventajas de cada consola-->
   <section aria-labelledby="titulo-beneficios">
 
     <!--
-      Asigno un identificador al título para relacionarlo
-      correctamente con la sección.
-    -->
+      Asigno un identificador al título para relacionarlo correctamente con la sección-->
     <h2 id="titulo-beneficios">
       Beneficios y desventajas
     </h2>
 
     <!--
-      Agrupo la comparación en una cuadrícula para mostrar
-      Xbox y PlayStation de forma paralela.
-    -->
+      Agrupo la comparación en una cuadrícula para mostrar Xbox y PlayStation de forma paralela-->
     <div class="comparativa-grid">
 
       <!--
-        Creo un artículo independiente para la comparación
-        relacionada con Xbox.
-      -->
+        Creo un artículo independiente para la comparación relacionada con Xbox-->
       <article>
 
         <!--
-          Utilizo un h3 para identificar la consola dentro
-          de la sección comparativa.
-        -->
+          Utilizo un h3 para identificar la consola dentro de la sección comparativa-->
         <h3>Xbox</h3>
 
         <!--
-          Creo un subtítulo para separar los beneficios.
-        -->
+          Creo un subtítulo para separar los beneficios-->
         <h4>Beneficios</h4>
 
         <!--
-          Utilizo una lista porque presento varios beneficios
-          relacionados con la misma consola.
-        -->
+          Utilizo una lista porque presento varios beneficios relacionados con la misma consola-->
         <ul>
           <li>
             Tiene acceso a diferentes juegos por medio
@@ -221,14 +168,11 @@
         </ul>
 
         <!--
-          Creo un subtítulo para separar las desventajas.
-        -->
+          Creo un subtítulo para separar las desventajas -->
         <h4>Desventajas</h4>
 
         <!--
-          Utilizo otra lista para presentar las desventajas
-          de forma organizada.
-        -->
+          Utilizo otra lista para presentar las desventajas de forma organizada -->
         <ul>
           <li>
             Algunos servicios necesitan una suscripción.
@@ -242,24 +186,19 @@
       </article>
 
       <!--
-        Creo un artículo independiente para la comparación
-        relacionada con PlayStation.
-      -->
+        Creo un artículo independiente para la comparación relacionada con PlayStation-->
       <article>
 
         <!--
-          Identifico la consola dentro de esta comparación.
-        -->
+          Identifico la consola dentro de esta comparación-->
         <h3>PlayStation</h3>
 
         <!--
-          Separo los beneficios mediante un subtítulo.
-        -->
+          Separo los beneficios mediante un subtítulo -->
         <h4>Beneficios</h4>
 
         <!--
-          Presento los beneficios en una lista.
-        -->
+          Presento los beneficios en una lista -->
         <ul>
           <li>
             Cuenta con juegos exclusivos reconocidos.
@@ -276,13 +215,11 @@
         </ul>
 
         <!--
-          Separo las desventajas mediante otro subtítulo.
-        -->
+          Separo las desventajas mediante otro subtítulo -->
         <h4>Desventajas</h4>
 
         <!--
-          Presento las desventajas en una lista.
-        -->
+          Presento las desventajas en una lista-->
         <ul>
           <li>
             Algunos juegos pueden tener precios altos.
@@ -298,34 +235,26 @@
   </section>
 
   <!--
-    Creo una sección para presentar algunas versiones
-    principales de cada consola.
-  -->
+    Creo una sección para presentar algunas versiones principales de cada consola-->
   <section aria-labelledby="titulo-versiones">
 
     <!--
-      Relaciono este título con la sección mediante
-      un identificador único.
-    -->
+      Relaciono este título con la sección mediante un identificador único -->
     <h2 id="titulo-versiones">
       Versiones principales
     </h2>
 
     <!--
-      Organizo las versiones de Xbox y PlayStation
-      dentro de una cuadrícula comparativa.
-    -->
+      Organizo las versiones de Xbox y PlayStation dentro de una cuadrícula comparativa -->
     <div class="comparativa-grid">
 
       <!--
-        Creo un artículo para las versiones de Xbox.
-      -->
+        Creo un artículo para las versiones de Xbox -->
       <article>
         <h3>Xbox</h3>
 
         <!--
-          Presento las versiones mediante una lista.
-        -->
+          Presento las versiones mediante una lista-->
         <ul>
           <li>Xbox Series X</li>
           <li>Xbox Series S</li>
@@ -333,14 +262,12 @@
       </article>
 
       <!--
-        Creo un artículo para las versiones de PlayStation.
-      -->
+        Creo un artículo para las versiones de PlayStation-->
       <article>
         <h3>PlayStation</h3>
 
         <!--
-          Presento las versiones mediante una lista.
-        -->
+          Presento las versiones mediante una lista-->
         <ul>
           <li>PlayStation 5 estándar</li>
           <li>PlayStation 5 edición digital</li>
@@ -351,28 +278,21 @@
   </section>
 
   <!--
-    Agrego una nueva sección interactiva para aplicar
-    lo aprendido sobre persistencia.
-
-    Esta sección permitirá que el usuario elija una consola
-    y que su decisión pueda conservarse en localStorage.
-  -->
+    Agrego una nueva sección interactiva para aplicar lo aprendido sobre persistencia ya sección 
+    permitirá que el usuario elija una consola y que su decisión pueda conservarse en localStorage-->
   <section
     class="preferencia-consola"
     aria-labelledby="titulo-preferencia"
   >
 
     <!--
-      Creo el título de la nueva funcionalidad y lo relaciono
-      con la sección mediante aria-labelledby.
-    -->
+      Creo el título de la nueva funcionalidad y lo relaciono con la sección mediante aria-labelledby -->
     <h2 id="titulo-preferencia">
       ¿Cuál consola prefieres?
     </h2>
 
     <!--
-      Explico al usuario qué ocurrirá con su selección.
-    -->
+      Explico al usuario qué ocurrirá con su selección-->
     <p>
       Selecciona tu consola favorita. Guardaremos tu
       elección en este navegador para recordarla cuando
@@ -380,21 +300,13 @@
     </p>
 
     <!--
-      Agrupo los botones relacionados con la elección
-      para organizarlos visualmente.
-    -->
+      Agrupo los botones relacionados con la elección para organizarlos visualmente -->
     <div class="preferencia-botones">
 
       <!--
-        Creo el botón de Xbox.
-
-        Uso data-consola para guardar el valor Xbox dentro
-        del elemento sin crear un identificador diferente
-        para cada consola.
-
-        JavaScript podrá leer este valor mediante
-        boton.dataset.consola.
-      -->
+        Creo el botón de Xbox y uso data-consola para guardar el valor Xbox dentro del elemento sin 
+        crear un identificador diferente para cada consola y en js podrá leer este valor mediante 
+        boton.dataset.consola-->
       <button
         type="button"
         class="btn-preferencia btn-preferencia--xbox"
@@ -404,11 +316,8 @@
       </button>
 
       <!--
-        Creo el botón de PlayStation.
-
-        Reutilizo la misma estructura y el mismo atributo
-        data-consola para evitar duplicar lógica.
-      -->
+        Creo el botón de PlayStation y reutilizo la misma estructura y el mismo atributo data-consola 
+        para evitar duplicar lógica-->
       <button
         type="button"
         class="btn-preferencia btn-preferencia--playstation"
@@ -418,11 +327,8 @@
       </button>
 
       <!--
-        Creo un botón para eliminar únicamente la preferencia.
-
-        Este botón tendrá un id porque representa una acción
-        diferente a seleccionar una consola.
-      -->
+        Creo un botón para eliminar únicamente la preferencia y este botón tendrá un id porque 
+        representa una acción diferente a seleccionar una consola-->
       <button
         type="button"
         id="btnEliminarPreferencia"
@@ -433,15 +339,10 @@
     </div>
 
     <!--
-      Creo un espacio para mostrar el resultado al usuario.
+      Creo un espacio para mostrar el resultado al usuario y utilizo aria-live="polite" para que 
+      las tecnologías de asistencia puedan anunciar el mensaje cuando JavaScript actualice su contenido.
 
-      Utilizo aria-live="polite" para que las tecnologías
-      de asistencia puedan anunciar el mensaje cuando
-      JavaScript actualice su contenido.
-
-      Evito utilizar alertas porque el mensaje puede mostrarse
-      directamente dentro de la página.
-    -->
+      Evito utilizar alertas porque el mensaje puede mostrarse directamente dentro de la página-->
     <p
       id="mensajePreferencia"
       class="mensaje-preferencia"
